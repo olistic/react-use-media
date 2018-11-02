@@ -19,6 +19,10 @@
     "test:coverage": "yarn test --coverage",
     "test:watch": "yarn test --watch"
   },
+  "peerDependencies": {
+    "react": "16.7.0-alpha.0",
+    "react-dom": "16.7.0-alpha.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -37,10 +41,19 @@
     "eslint-plugin-react": "7.x",
     "husky": "^1.1.2",
     "jest": "^23.6.0",
+    "jest-dom": "^2.1.0",
     "lint-staged": "^8.0.4",
     "prettier": "1.14.3",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-testing-library": "^5.2.3",
     "regenerator-runtime": "^0.12.1",
     "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverageFrom": ["src/**/*.js"],
+    "setupTestFrameworkScriptFile": "./jest.setup.js"
   },
   "husky": {
     "hooks": {
