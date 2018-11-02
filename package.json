@@ -2,6 +2,12 @@
   "name": "react-use-media",
   "version": "0.0.0",
   "description": "React hook for testing and monitoring media queries",
+  "keywords": [
+    "react",
+    "hooks",
+    "media",
+    "media query"
+  ],
   "main": "lib/index.js",
   "repository": "https://github.com/olistic/react-use-media.git",
   "author": "Matias Olivera <moliverafreire@gmail.com>",
@@ -19,6 +25,9 @@
     "test:coverage": "yarn test --coverage",
     "test:watch": "yarn test --watch"
   },
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "react": "16.7.0-alpha.0",
     "react-dom": "16.7.0-alpha.0"
