@@ -25,7 +25,7 @@ $ npm install --save react@16.7.0-alpha.0 react-dom@16.7.0-alpha.0
 
 ```js
 import React from 'react';
-import useMedia from 'react-use-media';
+import {useMedia} from 'react-use-media';
 
 function MyComponent() {
   const matches = useMedia('(max-width: 599px)');
